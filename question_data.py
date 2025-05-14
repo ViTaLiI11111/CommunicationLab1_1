@@ -28,7 +28,7 @@ class QuestionData:
             f.write(self.to_json())
 
     def prepare_filename(self, filename):
-        return os.path.join(os.path.dirname(os.path.abspath(__file__)), filename) #Виправлено
+        return os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
 
     def each_file(self, block):
         import glob
@@ -59,9 +59,9 @@ class QuestionData:
 
     def load_from(self, filename):
         try:
-            with open(filename, "r", encoding="utf-8") as f:  # Додано encoding
+            with open(filename, "r", encoding="utf-8") as f:
                 data = yaml.safe_load(f)
-                if isinstance(data, list): # Перевіряємо, чи data є списком
+                if isinstance(data, list):
                     for item in data:
                         if isinstance(item, dict) and "question" in item and "answers" in item:
                             question = Question(item["question"], item["answers"])

@@ -8,11 +8,11 @@ from statistics import Statistics
 
 class Engine:
     def __init__(self):
-        # Ensure directories exist
+
         Path(Config.yaml_dir).mkdir(parents=True, exist_ok=True)
         Path(Config.answers_dir).mkdir(parents=True, exist_ok=True)
 
-        self.question_collection = QuestionData() #Зчитуємо питання з файлів yml
+        self.question_collection = QuestionData()
         self.input_reader = InputReader()
         self.user_name = self.input_reader.read(welcome_message="Enter your name: ")
         self.current_time = time.strftime("%Y%m%d_%H%M%S")

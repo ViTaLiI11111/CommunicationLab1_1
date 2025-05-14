@@ -8,7 +8,7 @@ class InputReader:
             if validator and not validator(user_input):
                 if error_message:
                     print(error_message)
-                continue  # Prompt again
+                continue
 
             if process:
                 user_input = process(user_input)

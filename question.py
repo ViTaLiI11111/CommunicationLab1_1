@@ -34,11 +34,11 @@ class Question:
         }
 
     def to_json(self):
-        # Тут імпорт json вже не потрібен
+
         return json.dumps(self.to_h())
 
     def to_yaml(self):
-        # Тут імпорт yml вже не потрібен
+
         return yaml.dump(self.to_h())
 
     def find_answer_by_char(self, char):
