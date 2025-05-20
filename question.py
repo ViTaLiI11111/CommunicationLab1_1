@@ -1,6 +1,6 @@
-import json  # Імпортуємо json на початку файлу
-import yaml  # Імпортуємо yml на початку файлу
-import random # Імпортуємо random на початку файлу
+import json
+import yaml
+import random
 
 class Question:
     def __init__(self, raw_text, raw_answers):

@@ -1,9 +1,9 @@
-import time # Для роботи з часом (strftime)
-from pathlib import Path # Для роботи зі шляхами до файлів
-from config import Config # Імпортуємо клас Config з файлу config.py
-from question_data import QuestionData # Імпортуємо клас QuestionData з файлу question_data.py
-from input_reader import InputReader # Імпортуємо клас InputReader з файлу input_reader.py
-from file_writer import FileWriter # Імпортуємо клас FileWriter з файлу file_writer.py
+import time
+from pathlib import Path
+from config import Config
+from question_data import QuestionData
+from input_reader import InputReader
+from file_writer import FileWriter
 from statistics import Statistics
 
 class Engine:
